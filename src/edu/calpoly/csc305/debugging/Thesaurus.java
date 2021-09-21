@@ -13,7 +13,7 @@ public class Thesaurus {
   }
 
   public void addAlternatives(String word, String ... alternatives) {
-    synonyms.get(word).addAll(Arrays.asList(alternatives));
+    synonyms.put(word, Arrays.asList(alternatives));
   }
 
   public List<String> alternatives(String word) {
